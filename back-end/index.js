@@ -18,7 +18,7 @@ const db = mysql.createConnection({
 const PORT = process.env.PORT || 3001
 
 app.use(cors({
-    origin: 'http://localhost:5173' // o la URL donde se está ejecutando tu app React
+    origin: 'http://localhost:5173'
     }));
 app.use(express.json())
 app.listen(PORT,()=>{
